@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
+from search_bypass import views as search_views
 
 
 urlpatterns = [
     path('', include('main_page_app.urls')),
+    path('search_bypass/',search_views.search_page, name = 'search'),
     path('admin/', admin.site.urls),
 ]
 urlpatterns += staticfiles_urlpatterns()

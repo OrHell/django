@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/album/ -->
+<!-- saved from url=(0059)https://getbootstrap.com/docs/4.0/examples/floating-labels/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  {% load static %}
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/static/page_pack/logo.ico">
+    <link rel="icon" href="/static/first_page_pack/logo.ico">
 
-    <title>Home page Mentall</title>
+    <title>Mentall ByPass</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
 
     <!-- Bootstrap core CSS -->
-  
-    <link href="/static/page_pack/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/page_pack/bootstrap-social.css" rel="stylesheet">
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g==" crossorigin="anonymous" />-->
+    <link href="/static/first_page_pack/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Custom styles for this template -->
-    <link href="/page_pack/body.css" rel="stylesheet">
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="/static/page_pack/album.css" rel="stylesheet">
+    <link href="/static/first_page_pack/floating-labels.css" rel="stylesheet">
   <style type="text/css">.vue-slider-dot{position:absolute;will-change:transform;-webkit-transition:all 0s;transition:all 0s;z-index:5}.vue-slider-dot-tooltip{position:absolute;visibility:hidden}.vue-slider-dot-tooltip-show{visibility:visible}.vue-slider-dot-tooltip-top{top:-10px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-dot-tooltip-bottom{bottom:-10px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-dot-tooltip-left{left:-10px;top:50%;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-dot-tooltip-right{right:-10px;top:50%;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}</style><style type="text/css">.vue-slider-marks{position:relative;width:100%;height:100%}.vue-slider-mark{position:absolute;z-index:1}.vue-slider-ltr .vue-slider-mark,.vue-slider-rtl .vue-slider-mark{width:0;height:100%;top:50%}.vue-slider-ltr .vue-slider-mark-step,.vue-slider-rtl .vue-slider-mark-step{top:0}.vue-slider-ltr .vue-slider-mark-label,.vue-slider-rtl .vue-slider-mark-label{top:100%;margin-top:10px}.vue-slider-ltr .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ltr .vue-slider-mark-step{left:0}.vue-slider-ltr .vue-slider-mark-label{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.vue-slider-rtl .vue-slider-mark{-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%)}.vue-slider-rtl .vue-slider-mark-step{right:0}.vue-slider-rtl .vue-slider-mark-label{right:50%;-webkit-transform:translateX(50%);transform:translateX(50%)}.vue-slider-btt .vue-slider-mark,.vue-slider-ttb .vue-slider-mark{width:100%;height:0;left:50%}.vue-slider-btt .vue-slider-mark-step,.vue-slider-ttb .vue-slider-mark-step{left:0}.vue-slider-btt .vue-slider-mark-label,.vue-slider-ttb .vue-slider-mark-label{left:100%;margin-left:10px}.vue-slider-btt .vue-slider-mark{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.vue-slider-btt .vue-slider-mark-step{top:0}.vue-slider-btt .vue-slider-mark-label{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-ttb .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ttb .vue-slider-mark-step{bottom:0}.vue-slider-ttb .vue-slider-mark-label{bottom:50%;-webkit-transform:translateY(50%);transform:translateY(50%)}.vue-slider-mark-label,.vue-slider-mark-step{position:absolute}</style><style type="text/css">.vue-slider{position:relative;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;-ms-touch-action:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.vue-slider-disabled{pointer-events:none}.vue-slider-rail{position:relative;width:100%;height:100%;-webkit-transition-property:width,height,left,right,top,bottom;transition-property:width,height,left,right,top,bottom}.vue-slider-process{position:absolute;z-index:1}.vue-slider-sr-only{clip:rect(1px,1px,1px,1px);height:1px;width:1px;overflow:hidden;position:absolute!important}</style><style type="text/css">/* component style */
 .vue-slider-disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 
 /* rail style */
 .vue-slider-rail {
@@ -232,105 +227,27 @@
 </style><style type="text/css"></style></head>
 
   <body>
+    <form class="form-signin">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="/static/first_page_pack/logo.png" alt="" width="200" height="200">
+        <h1 class="h3 mb-3 font-weight-normal">Bypass searcher</h1>
+        <p><code>Caution </code>this software should not be used to damage any network system.
+          Please use this resource to test only your software products</p>
+      </div>
+      {{ test }}
+
+      <div class="form-group">
+      
+        <input type="" id="inputEmail" class="form-control" placeholder="Enter host name" required="" autofocus="">
+        
+      </div>
 
    
 
-    <main role="main">
-
-      <section class="jumbotron text-center cc_cursor">
-        <div class="container">
-          <div class="text-center mb-4">
-            <img class="mb-4" src="/static/page_pack/logo.png" alt="" width="200" height="200">
-            <h1 class="jumbotron-heading cc_cursor">Pet Projects</h1>
-         <h2><p>This <code>page</code> contains links to the main projects, as well as their brief description and principle of operation.</p></h2> 
-         <p><code>Most of the majority of projects are done in Django</code></p> 
-          </div>
-          
-          
-          <p>
-            <button type="button" class="btn btn-primary">Twitter</button>
-            <button type="button" class="btn btn-secondary">GitHub</button>
-
-            <button type="button" class="btn btn-danger">Gmail</button>
-        
-          
-          </p>
-        </div>
-      </section>
-
-      <div class="album py-5 cc_cursor">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-4 cc_cursor">
-              <div class="card mb-4 box-shadow">
-                <img src="/static/page_pack/search.png" class="img-fluid img-thumbnail" >
-                <div class="card-body">
-                  <p class="card-text">Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{% url 'search' %}">View</a></button>
-                        <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img src="/static/page_pack/error.png" class="img-fluid img-thumbnail" >
-                <div class="card-body">
-                  <p class="card-text">Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img src="/static/page_pack/error.png" class="img-fluid img-thumbnail" >
-                <div class="card-body">
-                  <p class="card-text">Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text Some fuck text</p>                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-
-    </main>
-
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="https://getbootstrap.com/docs/4.0/examples/album/#"></a>
-        </p>
-       
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/page_pack/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="/static/page_pack/popper.min.js"></script>
-    <script src="/static/page_pack/bootstrap.min.js"></script>
-    <script src="/static/page_pack/holder.min.js"></script>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Search bypass</button>
+      <p class="mt-5 mb-3 text-muted text-center">© 2021</p>
+    </form>
   
 
-<!----><svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg><div data-v-e9185a48=""><!----></div></body></html>
+<!----><div data-v-e9185a48=""><!----></div></body></html>
