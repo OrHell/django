@@ -227,7 +227,8 @@
 </style><style type="text/css"></style></head>
 
   <body>
-    <form class="form-signin">
+    <form action="{% url 'search_bypass' %}" method = "get" class="form-signin">
+      {% csrf_token %}
       <div class="text-center mb-4">
         <img class="mb-4" src="/static/first_page_pack/logo.png" alt="" width="200" height="200">
         <h1 class="h3 mb-3 font-weight-normal">Bypass searcher</h1>
@@ -238,7 +239,7 @@
 
       <div class="form-group">
       
-        <input type="" id="inputEmail" class="form-control" placeholder="Enter host name" required="" autofocus="">
+        <input id = "search"  type="search" name = "q" id="inputEmail" class="form-control" placeholder="Enter host name" required="" autofocus="">
         
       </div>
 

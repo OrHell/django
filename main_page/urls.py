@@ -22,6 +22,7 @@ from search_bypass import views as search_views
 urlpatterns = [
     path('', include('main_page_app.urls')),
     path('search_bypass/',search_views.search_page, name = 'search'),
+    path('search/', search_views.search_fun, name = 'search_bypass'),
     path('admin/', admin.site.urls),
 ]
 urlpatterns += staticfiles_urlpatterns()
