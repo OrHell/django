@@ -22,9 +22,23 @@ def search_fun(request):
     query = request.GET.get('q','')
     #subprocess.run('/home/mentall/Документы/Django_main_page/main_page/search_bypass/main.py')
     count, accuracy = sr(query)
+    passed = count[2]
+    failed = count[1]
+    error = count[0]
+    passed_a = accuracy[0]
+    failed_a = accuracy[1]
+    error_a = accuracy[2]
+    #[0, 1115, 264] [19.14, 80.86, 0.0]
     context = {
-        'count':count,
-        'accuracy':accuracy,
+        'ac':accuracy,
+        'passed':passed,
+        'failed':failed,
+        'error':error,
+
+        'passed_a':passed_a,
+        'failed_a':failed_a,
+        'error_a':error_a,
+        
         'query':query,
     }
     return render(request, 'second_page.html',context)

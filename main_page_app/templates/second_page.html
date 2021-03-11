@@ -237,8 +237,8 @@
         <h1 class="h3 mb-3 font-weight-normal">04.03.2021 | {{ query }}</h1>
       
       </div>
-     {{ count }}
-     {{ accuracy }}
+  
+     {{ ac }}
 
       <div class="form-group">
         <table class="table">
@@ -254,20 +254,20 @@
               <tr>
             
                 <td>Passed</td>
-                <td>134</td>
-                <td>75%</td>
+                <td>{{ passed }}</td>
+                <td>{{ passed_a }}%</td>
               </tr>
               <tr>
               
                 <td>Failed</td>
-                <td>35</td>
-                <td>25%</td>
+                <td>{{ failed }}</td>
+                <td>{{ failed_a }}%</td>
               </tr>
               <tr>
               
                 <td>Error</td>
-                <td>0</td>
-                <td>0%</td>
+                <td>{{ error }}</td>
+                <td>{{ error_a }}%</td>
               </tr>
             </tbody>
           </table>
