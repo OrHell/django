@@ -233,12 +233,14 @@
   <body>
     <form class="form">
       <div class="text-center mb-4">
-        <img class="mb-4" src="/static/first_page_pack/logo.png" alt="" width="200" height="200">
+   
+      <a href ="{% url 'search' %}">  <img class="mb-4" src="/static/page_pack/search_logo.png" alt="" width="200" height="136"></a>
+
         <h1 class="h3 mb-3 font-weight-normal">04.03.2021 | {{ query }}</h1>
       
       </div>
   
-     {{ ac }}
+
 
       <div class="form-group">
         <table class="table">
@@ -274,78 +276,7 @@
         </div>
         </div>
           <div class= "container-fluid">
-            <div class="row justify-content-md-cente align-items-start ">
-              <div class="col">
-                <h1 class="h3 mb-3 font-weight-normal text-center"> False Positive</h1>
-          
-          <table class="table ">
-            <thead class="thead-dark">
-              <tr>
-               
-                <th scope="col">Pyload</th>
-                <th scope="col">Zone</th>
-               
-              </tr>
-            </thead>
             
-            <tbody>
-              <tr>
-                <td>/payload/sqli/7.json</td>
-                <td><code>referer</code></td>
-          
-              </tr>
-          
-            </tbody>
-          
-         </table>
-   
-
-              </div>
-              <div class="w-100"></div>
-              <div class="col">
-                <h1 class="h3 mb-3 font-weight-normal text-center">  False Negative</h1>
-          
-                <table class="table ">
-                  <thead class="thead-dark">
-                    <tr>
-                     
-                      <th scope="col">Pyload</th>
-                      <th scope="col">Zone</th>
-                     
-                    </tr>
-                  </thead>
-                  
-                  <tbody>
-                    <tr>
-                      <td>/payload/sqli/7.json</td>
-                      <td><code>referer</code></td>
-                
-                    </tr>
-                
-                  </tbody>
-                
-               </table>
-         
-              </div>
-            </div>
-
-          
-     
-          
-
-
-        
-      
- 
- 
-  
-        
-          
-          
- 
-   
-
-      
       <button class="btn btn-lg btn-primary btn-block" type="submit">Save result</button>
       <p class="mt-5 mb-3 text-muted text-center">© 2021</p>
     </form>

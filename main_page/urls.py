@@ -17,12 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
 from search_bypass import views as search_views
+from mp4_mp3 import views as converter_views
 
 
 urlpatterns = [
     path('', include('main_page_app.urls')),
     path('search_bypass/',search_views.search_page, name = 'search'),
     path('search/', search_views.search_fun, name = 'search_bypass'),
+
+    path('convert/',converter_views.home_convert_page, name = 'convert_home'),
     path('admin/', admin.site.urls),
 ]
 urlpatterns += staticfiles_urlpatterns()

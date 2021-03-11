@@ -230,12 +230,16 @@
     <form action="{% url 'search_bypass' %}" method = "get" class="form-signin">
       {% csrf_token %}
       <div class="text-center mb-4">
-        <img class="mb-4" src="/static/first_page_pack/logo.png" alt="" width="200" height="200">
+        <a href ="{% url 'home-page' %}">  <img class="mb-4" src="/static/page_pack/search_logo.png" alt="" width="200" height="136"></a>
+     
         <h1 class="h3 mb-3 font-weight-normal">Bypass searcher</h1>
         <p><code>Caution </code>this software should not be used to damage any network system.
-          Please use this resource to test only your software products</p>
+          Please use this resource to test only your software products <br>  
+            <code>Please run tests on a local server</code>
+          </p>
+       
       </div>
-      {{ test }}
+      
 
       <div class="form-group">
       
@@ -247,6 +251,8 @@
 
       
       <button class="btn btn-lg btn-primary btn-block" type="submit">Search bypass</button>
+    
+
       <p class="mt-5 mb-3 text-muted text-center">© 2021</p>
     </form>
   
