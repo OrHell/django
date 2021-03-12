@@ -33,6 +33,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main_page_app.apps.MainPageAppConfig',
+    'search_bypass.apps.SearchBypassConfig',
+    'mp4_mp3.apps.Mp4Mp3Config',
+    'dominate_color.apps.DominateColorConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,3 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+MEDIA_URL = '/media/'
+
+# Путь хранения картинок
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

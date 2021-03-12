@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
 from search_bypass import views as search_views
 from mp4_mp3 import views as converter_views
+from dominate_color import views as color_views
 
 
 urlpatterns = [
@@ -26,6 +27,8 @@ urlpatterns = [
     path('search/', search_views.search_fun, name = 'search_bypass'),
 
     path('convert/',converter_views.home_convert_page, name = 'convert_home'),
+
+    path('color/',color_views.home_color_page, name = 'color_home'),
     path('admin/', admin.site.urls),
 ]
 urlpatterns += staticfiles_urlpatterns()
